@@ -1,9 +1,29 @@
 /**
  * APP PWA - Etanol x Gasolina
- * @author Professor José de Assis
+ * @author Erica Viana
  * @version 2.0
  */
 
+// --------------------------------------------------
+// Registro do service work
+
+// Se o navegador de internet suportar esse recurso
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('sw.js')
+        .then(() => {
+            console.log("Service worker registrado!")
+        })
+} else {
+
+}
+// --------------------------------------------------
+
+if (condition) {
+
+} else {
+
+}
 function calcular() {
     //capturar os valores das caixas de input
     let gasolina = document.getElementById('gasolina').value
